@@ -1,13 +1,21 @@
-public class Perro extends Animal {
+public class Perro extends Animal{
 
-    public Perro() {
+    public Perro(String nombre) {
+        super(nombre);
     }
-    
+    @Override
     public String comunicarse(){
-        return "El perro ladra!";
+        return "EL perro ladra!";
+    }
+
+    @Override
+    public String trasladarse() {
+        return "El perro corre en cuatro patas y juega";
+    }
+
+    @Override
+    public String toString() {
+         return super.toString();
     }
     
-    public String moverse(){
-        return "El perro corre!";
-    }
 }

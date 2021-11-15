@@ -1,13 +1,20 @@
 public class Gato extends Animal{
 
-    public Gato() {
+    public Gato(String nombre) {
+        super(nombre);
     }
-    
+    @Override
     public String comunicarse(){
-        return "El gato maulla!";
+        return "El gato maulla";
     }
 
-    public String moverse(){
-        return "El gato corre de miedo!";
+    @Override
+    public String trasladarse() {
+        return "El gato corre cuando esta asustado!";
+    }
+    
+    @Override
+    public String toString() {
+         return super.toString();
     }
 }

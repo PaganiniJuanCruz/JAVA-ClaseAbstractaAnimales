@@ -1,13 +1,20 @@
-public class Pajaro {
+public class Pajaro extends Animal{
 
-    public Pajaro() {
-    }
-    
-    public String comunicarse(){
-        return "El pajaro canta!";
+    public Pajaro(String nombre) {
+        super(nombre);
     }
 
-    public String moverse(){
-        return "El pajaro vuela!";
+    @Override
+    public String comunicarse() {
+        return "El pájaro canta";
+    }
+
+    @Override
+    public String trasladarse() {
+        return "El pájaro vuela";
+    }
+    @Override
+    public String toString() {
+         return super.toString();
     }
 }
